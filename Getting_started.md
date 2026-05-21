@@ -1,9 +1,9 @@
 ### Chat with a model
 
-Run and chat with [Gemma 3](https://ollama.com/library/gemma3):
+Run and chat with [Phi 3](https://ollama.com/library/phi3):
 
 ```
-ollama run gemma3
+ollama run phi3
 ```
 
 See [ollama.com/library](https://ollama.com/library) for the full list.
@@ -16,7 +16,7 @@ Ollama has a REST API for running and managing models.
 
 ```
 curl http://localhost:11434/api/chat -d '{
-  "model": "gemma3",
+  "model": "phi3",
   "messages": [{
     "role": "user",
     "content": "Why is the sky blue?"
@@ -36,7 +36,7 @@ pip install ollama
 ```python
 from ollama import chat
 
-response = chat(model='gemma3', messages=[
+response = chat(model='phi3', messages=[
   {
     'role': 'user',
     'content': 'Why is the sky blue?',
